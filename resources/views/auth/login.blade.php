@@ -1,11 +1,24 @@
-@extends('layouts.app')
+@extends('layouts.loginapp')
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="loginsty" style="margin-top: 50px">        
+    <!-- <h1  align="center" style="margin-top: 0px;margin-bottom: 0px;">ACL</h1> -->
+    <div class="row">
+        <div class="col-md-5">
+            
+        </div>
+        <div class="col-md-4">
+            <img align="center" src="{{URL::asset('logo4.png')}}" >
+        </div>
+        <div class="col-md-3">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center" >
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+            <div class="card" >
+                <div class="card-header" style="background-color: cadetblue;">{{ __('Login') }} </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -46,6 +59,9 @@
 
                                     <label class="form-check-label" for="remember">
                                         {{ __('Remember Me') }}
+                                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    {{ __('Forgot Your Password?') }}
+                                </a>
                                     </label>
                                 </div>
                             </div>
@@ -53,19 +69,19 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button style="    width: 85px;" type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
+                                <a style="margin-left: 25px;" class="" href="{{ route('register') }}">Register Here</a>
                             </div>
+                            
                         </div>
                     </form>
                 </div>
+                <div class="card-footer" style="background-color: cadetblue;"></div>
             </div>
         </div>
+    </div>
     </div>
 </div>
 @endsection
