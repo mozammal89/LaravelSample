@@ -22,6 +22,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/demand.css') }}" rel="stylesheet">
 
     <link href="{{asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- styles -->
@@ -135,6 +136,8 @@
                         </ul>
                     </li>
                     <li><a href="#"><i class="glyphicon glyphicon-stats"></i> Accounts </a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-stats"></i>Demand Letter</a></li>                    
+                    <li><a href="#"><i class="glyphicon glyphicon-stats"></i>Delivery Challan</a></li>                    
                     <li class="submenu">
                          <a href="#">
                             <i class="glyphicon glyphicon-list"></i> H.R Admin
@@ -174,6 +177,7 @@
         
        
     </div>  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
