@@ -65,14 +65,14 @@
                      </a>
                   </div>
                </div>
-               <div class="col-md-5">
-                  <div class="row">
-                    <div class="col-lg-12">
+               <div style="margin:0px" class="col-md-5">
+                  <div class="">
+                    <div class="">
                       <div class="input-group form">
-                           <input type="text" class="form-control" placeholder="Search...">
+                           <!-- <input type="text" class="form-control" placeholder="Search...">
                            <span class="input-group-btn">
                              <button class="btn btn-primary" type="button">Search</button>
-                           </span>
+                           </span> -->
                       </div>
                     </div>
                   </div>
@@ -92,12 +92,12 @@
                             </li>
                             @else
                           <li class="nav-item dropdown">
-                                <a id="navbarDropdown" style="color: #fff;padding-top: 4px;" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a style="    height: 35px" id="navbarDropdown" style="color: #fff;padding-top: 4px;" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} 
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item btn btn-danger btn-sm" href="{{ route('logout') }}"
+                                    <a style="width: 145px;" class="dropdown-item btn btn-danger btn-sm" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -136,7 +136,7 @@
                         </ul>
                     </li>
                     <li><a href="#"><i class="glyphicon glyphicon-stats"></i> Accounts </a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-stats"></i>Demand Letter</a></li>                    
+                    <li><a href="/demand/create"><i class="glyphicon glyphicon-stats"></i>Demand Letter</a></li>                    
                     <li><a href="#"><i class="glyphicon glyphicon-stats"></i>Delivery Challan</a></li>                    
                     <li class="submenu">
                          <a href="#">
