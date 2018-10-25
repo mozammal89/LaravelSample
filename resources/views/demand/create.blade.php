@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="">
+<div class="container">
     <div class="row">
         <div class="col-md-11">
             <div class="card">
@@ -93,7 +93,7 @@
                         <input type="text" id="defaultForm-pass" class="form-control">
                         <label style="margin-left:15px" for="defaultForm-email">Running Cradit Balance</label>                  
                     </div>
-                    <div class="text-center">
+                    <div class="text-center col-sm-12 hp">
                         <button class="btn btn-primary waves-effect waves-light">Save</button>
                     </div> 
 								  
