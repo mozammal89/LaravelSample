@@ -137,7 +137,7 @@
                     </li>
                     <li><a href="#"><i class="glyphicon glyphicon-stats"></i> Accounts </a></li>
                     <li><a href="/demand/create"><i class="glyphicon glyphicon-stats"></i>Demand Letter</a></li>                    
-                    <li><a href="#"><i class="glyphicon glyphicon-stats"></i>Delivery Challan</a></li>                    
+                    <li><a href="/deliverychalan/create"><i class="glyphicon glyphicon-stats"></i>Delivery Challan</a></li>                    
                     <li class="submenu">
                          <a href="#">
                             <i class="glyphicon glyphicon-list"></i> H.R Admin
