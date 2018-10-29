@@ -3,10 +3,10 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-11">
             <div class="card">
                 <div class="card-header">Dashboard</div>
-                <div class="card-body">
+                  <div class="card-body">
                      
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">

@@ -5,9 +5,7 @@
         <div class="col-md-11">
             <div class="card">
                 <div class="card-header">Dashboard</div>
-                <div class="card-body">
-                
-                
+                <div class="card-body">             
                 <div class="row">
                     <div class="col-sm-8">
                     <label style="margin-top: 30px;">Delivery Chalan</label> 
