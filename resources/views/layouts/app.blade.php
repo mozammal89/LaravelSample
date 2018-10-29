@@ -55,7 +55,7 @@
 <body class="page-header-fixed">
     <div id="app">
 <div class="header">
-         <div class="container">
+         <div class="">
             <div class="row">
                <div class="col-md-5">
                   
@@ -124,20 +124,9 @@
                 <ul class="nav">
                     <!-- Main menu -->
                     <li class="current"><a href="/home"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
-                    <li class="submenu">
-                         <a href="#">
-                            <i class="glyphicon glyphicon-list"></i> WareHouse
-                            <span class="caret pull-right"></span>
-                         </a>
-                         <!-- Sub menu -->
-                         <ul>
-                            <li><a href="/warehouse">Stock</a></li>
-                            <li><a href="/loan">Loan</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="glyphicon glyphicon-stats"></i> Accounts </a></li>
                     <li><a href="/demand/create"><i class="glyphicon glyphicon-stats"></i>Demand Letter</a></li>                    
                     <li><a href="/dealer"><i class="glyphicon glyphicon-stats"></i>Dealer</a></li>                    
+                    <li><a href="/dealer"><i class="glyphicon glyphicon-stats"></i>Products</a></li>                    
                     <li><a href="/deliverychalan/create"><i class="glyphicon glyphicon-stats"></i>Delivery Challan</a></li>                    
                     <li class="submenu">
                          <a href="#">
@@ -151,6 +140,19 @@
                         </ul>
                     </li>
                     <li><a href="#"><i class="glyphicon glyphicon-tasks"></i> Profile</a></li>
+                    <li class="submenu">
+                         <a href="#">
+                            <i class="glyphicon glyphicon-list"></i> Report
+                            <span class="caret pull-right"></span>
+                         </a>
+                         <!-- Sub menu -->
+                         <ul>
+                            <li><a href="#">Delivery Report</a></li>
+                            <li><a href="#">Bill Report</a></li>
+                            <li><a href="#">Collection Report</a></li>
+                            <li><a href="#">Sales Return Summary</a></li>
+                        </ul>
+                    </li>
                     <li class="submenu">
                          <a href="#">
                             <i class="glyphicon glyphicon-list"></i> Settings
