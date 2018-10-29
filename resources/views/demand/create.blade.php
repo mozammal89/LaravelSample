@@ -89,21 +89,20 @@
                         <input type="text" id="defaultForm-pass" class="form-control">
                         <label style="margin-left:15px" for="defaultForm-email">Running Cradit Balance</label>                  
                     </div>
-                    <button align="right"  class="btn btn-success add_form_field"><span style="font-size:16px; font-weight:bold;">Add new Field</span></button>
+                
+                    <label></label>
                     <div class="hr">
 		            </div>
 
                     <div class="row ">
-                        <div class="col-sm-1">
-                            <p align="left" style="font-weight: bold; font-size: 16px;margin-bottom: 0px;padding-bottom: 0px;">Si No</p>
-                        </div>
+                        
                         <div class="col-sm-2">
                             <p align="left" style="font-weight: bold; font-size: 16px;margin-bottom: 0px;padding-bottom: 0px;">Product Code</p>
                         </div>
                         <div class="col-sm-2">      
                             <p align="left" style="font-weight: bold; font-size: 16px; margin-bottom: 0px;padding-bottom: 0px;">Product Name</p>   
                         </div>
-                        <div class="col-sm-1"> 
+                        <div class="col-sm-2"> 
                             <p align="left" style="font-weight: bold; font-size: 16px; margin-bottom: 0px;padding-bottom: 0px;">Color</p>
                         </div>
                         <div class="col-sm-1"> 
@@ -116,17 +115,14 @@
                             <p align="left" style="font-weight: bold; font-size: 16px; margin-bottom: 0px;padding-bottom: 0px;margin-left: 8px;">Total</p>
                         </div>
                         <div class="col-sm-1">
-                            
+                            <button align="left" style="position: absolute;height: 30px"  class="btn btn-success add_form_field"><span style="font-size:16px; font-weight:bold;"><i class="glyphicon glyphicon-plus"></i></span></button>
                         </div>
                     </div>
                     <div class="hr" style="width: 100%;background-color:black;height:3px;margin-bottom:15px;">
                     </div>
                     <div id="goods_container">	
-                        <div class="row container1">  
-                            <div id="inputh" class="md-form col-sm-1 ">                   
-                                <input type="text" id="defaultForm-pass" class="form-control">
-                                <label style="margin-left:15px" for="defaultForm-email">Si No</label>                  
-                            </div>  
+                        <div class=" container1">  
+                             
                             <div id="inputh" class="md-form col-sm-2 ">                   
                                 <input type="text" id="defaultForm-pass" class="form-control">
                                 <label style="margin-left:15px" for="defaultForm-email">Product Code</label>                  
@@ -135,7 +131,7 @@
                                 <input type="text" id="defaultForm-pass" class="form-control">
                                 <label style="margin-left:15px" for="defaultForm-email">Product Name</label>                  
                             </div>
-                            <div id="inputh" class="md-form col-sm-1 ">                   
+                            <div id="inputh" class="md-form col-sm-2 ">                   
                                 <input type="text" id="defaultForm-pass" class="form-control">
                                 <label style="margin-left:15px" for="defaultForm-email">Color</label>                  
                             </div>
@@ -176,7 +172,7 @@
         e.preventDefault();
         if(x < max_fields){
             x++;          
-            $(wrapper).append('<div class="row container1">                                                                                                                 <div id="inputh" class="md-form col-sm-1 "><input type="text" id="defaultForm-pass" class="form-control"><label style="margin-left:15px" for="defaultForm-email">SiNo</label>                                              </div>                              <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Product Code</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Product Name</label>                                              </div>                            <div id="inputh" class="md-form col-sm-1 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Color</label>                                              </div>                            <div id="inputh" class="md-form col-sm-1 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                               <label style="margin-left:15px" for="defaultForm-email">Order</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">U.Price</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Total Amount</label>                                              </div>                                         <div class="col-sm-1 delete"><a href="#" style="height:30px;width: 47px;margin-left: 3px;padding-top:4px;margin-top: 10px;padding-left: 2px;" class="btn btn-danger ">Delete</a>  </div> </div>'); 
+            $(wrapper).append('<div class=" container1">                                                                                                                 <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Product Code</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Product Name</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Color</label>                                              </div>                            <div id="inputh" class="md-form col-sm-1 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                               <label style="margin-left:15px" for="defaultForm-email">Order</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">U.Price</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Total Amount</label>                                              </div>                                         <div class="col-sm-1 delete"><a href="#" style="height:30px;width: 45px;margin-left: 15px;" class="btn btn-danger "><i class="glyphicon glyphicon-remove"></i></a>  </div> </div>'); 
             //add input box
         }
   else
