@@ -5,8 +5,8 @@
     <div class="row">
         <div class="col-md-11">
             <div class="card">
-                <div class="card-header">Deshboard</div>
-                <h3 align="center">Dealer</h3>
+                <div class="card-header"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</div>
+                <h3 align="center">Dealer List</h3>
                 <div class="content-box-large">
                   <div class="card-body">       
                   <div class=col-md-10>
@@ -20,17 +20,17 @@
             <table id="mytable" class="table table-bordred table-striped">                   
                 <thead>                   
                   <th><input type="checkbox" id="checkall" /></th>                  
-                  <th>Dealer Name</th>
-                  <th>D.Sort Name</th>
-                  <th>Proprietor</th>                     
-                  <th>Type</th>                     
-                  <th>Op. Date</th>                     
-                  <th>Op.Month</th>                     
-                  <th>P.S</th>                     
-                  <th>Address</th>                     
-                  <th>Contact No.</th>                     
-                  <th>Edit</th>                      
-                  <th>Delete</th>
+                  <th style="font-weight: bold;color:black">Dealer Name</th>
+                  <th style="font-weight: bold;color:black">D.Sort Name</th>
+                  <th style="font-weight: bold;color:black">Proprietor</th>                     
+                  <th style="font-weight: bold;color:black">Type</th>                     
+                  <th style="font-weight: bold;color:black">Op. Date</th>                     
+                  <th style="font-weight: bold;color:black">Op.Month</th>                     
+                  <th style="font-weight: bold;color:black">P.S</th>                     
+                  <th style="font-weight: bold;color:black">Address</th>                     
+                  <th style="font-weight: bold;color:black">Contact No.</th>                     
+                  <th style="font-weight: bold;color:black">Edit</th>                      
+                  <th style="font-weight: bold;color:black">Delete</th>
                 </thead>
                 <tbody>    
                   <tr>
@@ -139,12 +139,13 @@
           </div>            
         </div>
 
-        <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-          <div class="modal-dialog">
+        <div  class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+          <div  class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
+                <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                  <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
+                  
               </div>
               <div class="modal-body">
                 <div class="form-group">
@@ -170,8 +171,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
+            <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-              <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+              
           </div>
           <div class="modal-body">       
             <div class="alert alert-danger">

@@ -123,14 +123,14 @@
             <div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current"><a href="/home"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
-                    <li><a href="/demand/create"><i class="glyphicon glyphicon-stats"></i>Demand Letter</a></li>                    
-                    <li><a href="/dealer"><i class="glyphicon glyphicon-stats"></i>Dealer</a></li>                    
-                    <li><a href="/dealer"><i class="glyphicon glyphicon-stats"></i>Products</a></li>                    
-                    <li><a href="/deliverychalan/create"><i class="glyphicon glyphicon-stats"></i>Delivery Challan</a></li>                    
+                    <li class="current"><a href="/home"><img align="center" src="{{URL::asset('icon/home.png')}}" > Dashboard</a></li>
+                    <li><a href="/demand/create"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</a></li>                    
+                    <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</a></li>                    
+                    <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/products.png')}}"> Products</a></li>                    
+                    <li><a href="/deliverychalan/create"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
                     <li class="submenu">
                          <a href="#">
-                            <i class="glyphicon glyphicon-list"></i> H.R Admin
+                            <img align="center" src="{{URL::asset('icon/admin.png')}}"> H.R Admin
                             <span class="caret pull-right"></span>
                          </a>
                          <!-- Sub menu -->
@@ -139,10 +139,10 @@
                             <li><a href="/salary">Salary</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><i class="glyphicon glyphicon-tasks"></i> Profile</a></li>
+                    <li><a href="#"><img align="center" src="{{URL::asset('icon/profile.png')}}"> Profile</a></li>
                     <li class="submenu">
                          <a href="#">
-                            <i class="glyphicon glyphicon-list"></i> Report
+                            <img align="center" src="{{URL::asset('icon/report.png')}}"> Report
                             <span class="caret pull-right"></span>
                          </a>
                          <!-- Sub menu -->
@@ -155,7 +155,7 @@
                     </li>
                     <li class="submenu">
                          <a href="#">
-                            <i class="glyphicon glyphicon-list"></i> Settings
+                            <img align="center" src="{{URL::asset('icon/settings.png')}}"> Settings
                             <span class="caret pull-right"></span>
                          </a>
                          <!-- Sub menu -->

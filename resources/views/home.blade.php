@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-11">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header"><img align="center" src="{{URL::asset('icon/home.png')}}" > Dashboard</div>
                   <div class="card-body">
                      
       <main class="mdl-layout__content mdl-color--grey-100">

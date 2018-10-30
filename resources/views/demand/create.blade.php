@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-11">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</div>
                 <div class="card-body">
                     <div id="inputh" class="md-form col-sm-6 hp">                   
                         <input type="text" id="defaultForm-email" class="form-control">
