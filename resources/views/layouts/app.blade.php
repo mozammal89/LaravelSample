@@ -55,7 +55,7 @@
 <body class="page-header-fixed">
     <div id="app">
 <div class="header">
-         <div class="">
+         <div class="container">
             <div class="row">
                <div class="col-md-5">
                   
