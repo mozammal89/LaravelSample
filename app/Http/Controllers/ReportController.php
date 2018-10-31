@@ -4,21 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DeliveryController extends Controller
+class ReportController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
-    
     public function index()
     {
-        //
+        return view('report.productdelivery.index');
     }
 
     /**
@@ -28,7 +23,7 @@ class DeliveryController extends Controller
      */
     public function create()
     {
-        return view('deliverychalan.create');
+        return view('report.productdelivery.print');
     }
 
     /**

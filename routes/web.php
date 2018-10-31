@@ -20,5 +20,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('demand','DemandController');
 Route::resource('deliverychalan','DeliveryController');
 Route::resource('dealer','DealerController');
+Route::resource('report','ReportController');
 
 

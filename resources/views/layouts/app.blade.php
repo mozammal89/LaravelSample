@@ -128,17 +128,17 @@
                     <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</a></li>                    
                     <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/products.png')}}"> Products</a></li>                    
                     <li><a href="/deliverychalan/create"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
-                    <li class="submenu">
+                    <!-- <li class="submenu">
                          <a href="#">
                             <img align="center" src="{{URL::asset('icon/admin.png')}}"> H.R Admin
                             <span class="caret pull-right"></span>
                          </a>
-                         <!-- Sub menu -->
+                        
                          <ul>
                             <li><a href="/employee">Employee</a></li>
                             <li><a href="/salary">Salary</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li><a href="#"><img align="center" src="{{URL::asset('icon/profile.png')}}"> Profile</a></li>
                     <li class="submenu">
                          <a href="#">
@@ -147,7 +147,7 @@
                          </a>
                          <!-- Sub menu -->
                          <ul>
-                            <li><a href="#">Delivery Report</a></li>
+                            <li><a href="/report">Delivery Report</a></li>
                             <li><a href="#">Bill Report</a></li>
                             <li><a href="#">Collection Report</a></li>
                             <li><a href="#">Sales Return Summary</a></li>
