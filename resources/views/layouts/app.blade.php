@@ -14,7 +14,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -50,7 +50,6 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
 </head>
 <body class="page-header-fixed">
     <div id="app">
@@ -124,21 +123,12 @@
                 <ul class="nav">
                     <!-- Main menu -->
                     <li class="current"><a href="/home"><img align="center" src="{{URL::asset('icon/home.png')}}" > Dashboard</a></li>
-                    <li><a href="/demand/create"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</a></li>                    
+                    <li><a href="/demand"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</a></li>                    
                     <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</a></li>                    
                     <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/products.png')}}"> Products</a></li>                    
                     <li><a href="/deliverychalan/create"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
-                    <!-- <li class="submenu">
-                         <a href="#">
-                            <img align="center" src="{{URL::asset('icon/admin.png')}}"> H.R Admin
-                            <span class="caret pull-right"></span>
-                         </a>
-                        
-                         <ul>
-                            <li><a href="/employee">Employee</a></li>
-                            <li><a href="/salary">Salary</a></li>
-                        </ul>
-                    </li> -->
+                    <li><a href="#"><img align="center" src="{{URL::asset('icon/storage.png')}}"> Inventory</a></li>                    
+                    
                     <li><a href="#"><img align="center" src="{{URL::asset('icon/profile.png')}}"> Profile</a></li>
                     <li class="submenu">
                          <a href="#">
@@ -168,25 +158,21 @@
                 </ul>
              </div>
           </div>
-          <div class="col-md-10">
-            
-                @yield('content')
-            
+          <div class="col-md-10">            
+                @yield('content')            
           </div>
         </div>
     </div>
-
-     @yield('script')
-        
-       
-    </div>  
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+    </div>      
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://code.jquery.com/jquery.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('js/custom.js')}}"></script>                                    
+        <script src="{{asset('js/custom.js')}}"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+@yield('script')                      
 </body>
 </html>

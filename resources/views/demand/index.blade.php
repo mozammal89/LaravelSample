@@ -5,123 +5,139 @@
     <div class="row">
         <div class="col-md-11">
             <div class="card">
-                <div class="card-header"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</div>
-                <h3 align="center">Dealer List</h3>
+                <div class="card-header"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand</div>
+                <h3 align="center">Demand List</h3>
                 <div class="content-box-large">
                   <div class="card-body">       
                   <div class=col-md-10>
-                    <h4>All Dealer Details</h4>                   
+                    <h4>All Demand Details</h4>                   
                   </div>
                   <div class=col-md-2>
-                      <a href="/dealer/create" style="width: 35px" class=" btn btn-success btn-sm glyphicon glyphicon-plus"> </a>
+                      <a href="/demand/create" style="width: 35px" class=" btn btn-success btn-sm glyphicon glyphicon-plus"> </a>
                   </div>
         <div class="col-md-12">        
         <div class="table-responsive">                
             <table id="mytable" class="table table-bordred table-striped">                   
                 <thead>                   
-                  <th><input type="checkbox" id="checkall" /></th>                  
-                  <th style="font-weight: bold;color:black">Dealer Name</th>
-                  <th style="font-weight: bold;color:black">D.Sort Name</th>
-                  <th style="font-weight: bold;color:black">Proprietor</th>                     
-                  <th style="font-weight: bold;color:black">Type</th>                     
-                  <th style="font-weight: bold;color:black">Op. Date</th>                     
-                  <th style="font-weight: bold;color:black">Op.Month</th>                     
-                  <th style="font-weight: bold;color:black">P.S</th>                     
-                  <th style="font-weight: bold;color:black">Address</th>                     
-                  <th style="font-weight: bold;color:black">Contact No.</th>                     
-                  <th style="font-weight: bold;color:black">Edit</th>                      
-                  <th style="font-weight: bold;color:black">Delete</th>
+                                   
+                  <th style="font-weight: bold; color:black">Dealer Name</th>
+                  <th style="font-weight: bold; color:black">Dealer Code</th>
+                  <th style="font-weight: bold; color:black">Date</th>                     
+                  <th style="font-weight: bold; color:black">Address</th>                     
+                  <th style="font-weight: bold; color:black">Mobile</th>                     
+                  <th style="font-weight: bold; color:black">Sales Officer</th>                   
+                  <th style="font-weight: bold; color:black">District</th>                     
+                  <th style="font-weight: bold; color:black">Sales Area</th>                     
+                  <th style="font-weight: bold; color:black">Sales Zones</th>                     
+                  <th style="font-weight: bold; color:black">Edit</th>                      
+                  <th style="font-weight: bold; color:black">Delete</th>
+                  <th style="font-weight: bold; color:black">Report</th>
                 </thead>
                 <tbody>    
                   <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>                      
+                                            
                       <td>Dealer Name 1</td>
-                      <td>S.Name 1</td>
+                      <td>Dealer Code 1</td>
+                      <td>October 29, 2018</td> 
                       <td>ABC</td>
-                      <td>Inactive</td>
-                      <td>October 29, 2018</td>                    
-                      <td>October</td>                    
-                      <td>Uttara</td>                    
-                      <td>Dhaka</td>                    
-                      <td>564564</td>                    
+                      <td>1959445</td>
+                      <td>Sales Officer 1</td>   
+                      <td>Dhaka</td>
+
+                      <td>Area 1</td>  
+                      <td>Zones 1</td>                    
                                           
                                          
                       <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                      
                       <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+
+                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>
     
                   <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>
+                      
                      
                       <td>Dealer Name 2</td>
-                      <td>S.Name 2</td>
+                      <td>Dealer Code 2</td>
+                      <td>October 29, 2018</td> 
                       <td>ABC</td>
-                      <td>active</td>
-                      <td>October 29, 2018</td>                    
-                      <td>October</td>                    
-                      <td>Uttara</td>                 
-                      <td>Dhaka</td>                    
-                      <td>564564</td>                    
+                      <td>1959445</td>
+                      <td>Sales Officer 2</td>                 
+                      <td>Dhaka</td>                  
+                      <td>Area 2</td>                    
+                      <td>Zones 2</td>                    
                                           
                                          
                       <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                      
                       <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+
+                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>
     
     
                   <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>
+                      
                       
                       <td >Dealer Name 3</td>
-                      <td >S.Name 3</td>
+                      <td >Dealer Code 3</td>
+                      <td>October 29, 2018</td> 
                       <td >ABC</td>
-                      <td>Inactive</td>
-                      <td>October 29, 2018</td>                    
-                      <td>October</td>                    
-                      <td>Uttara</td>                    
-                      <td>Dhaka</td>                    
-                      <td>564564</td>                    
+                      <td>1959445</td>
+                      <td>Sales Officer 3</td>                    
+                      <td>Dhaka</td>                  
+                      <td>Area 3</td>                    
+                      <td>Zones 3</td>                    
                                           
                                          
                       <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                      
                       <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+
+                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>    
     
                   <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>
+                      
                      
                       <td>Dealer Name 4</td>
-                      <td>S.Name 4</td>
+                      <td>Dealer Code 4</td>
+                      <td>October 29, 2018</td> 
                       <td>ABC</td>
-                      <td>Inactive</td>
-                      <td>October 29, 2018</td>                    
-                      <td>October</td>                    
-                      <td>Uttara</td>                    
-                      <td>Dhaka</td>                    
-                      <td>564564</td>                    
+                      <td>1959445</td>
+                      <td>Sales Officer 4</td>                    
+                      <td>Dhaka</td>                  
+                      <td>Area 4</td>                    
+                      <td>Zones 4</td>                    
                                           
                                          
                       <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                      
                       <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+
+                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>
     
     
                   <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>
                       
                       <td >Dealer Name 5</td>
-                      <td >S.Name 5</td>
+                      <td >Dealer Code 5</td>
+                      <td>October 29, 2018</td> 
                       <td >ABC</td>
-                      <td>active</td>
-                      <td>October 29, 2018</td>                    
-                      <td>October</td>                    
-                      <td>Uttara</td>                    
-                      <td>Dhaka</td>                    
-                      <td>564564</td>                    
+                      <td>1959445</td>
+                      <td>Sales Officer 5</td>                    
+                      <td>Dhaka</td>                  
+                      <td>Area 5</td>                    
+                      <td>Zones 5</td>                    
                                           
                                          
                       <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                      
                       <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+
+                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>    
                 </tbody>        
           </table>

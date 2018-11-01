@@ -17,7 +17,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('demand','DemandController');
+//Route::resource('demand','DemandController');
+
+// demand routes
+Route::get('demand','DemandController@index')->name('demand.index');
+Route::get('demand/create','DemandController@create')->name('demand.create');
+Route::get('demand/report','DemandController@report')->name('demand.report');
+
 Route::resource('deliverychalan','DeliveryController');
 Route::resource('dealer','DealerController');
 Route::resource('report','ReportController');
