@@ -29,9 +29,7 @@
                   <th style="font-weight: bold; color:black">District</th>                     
                   <th style="font-weight: bold; color:black">Sales Area</th>                     
                   <th style="font-weight: bold; color:black">Sales Zones</th>                     
-                  <th style="font-weight: bold; color:black">Edit</th>                      
-                  <th style="font-weight: bold; color:black">Delete</th>
-                  <th style="font-weight: bold; color:black">Report</th>
+                  <th style="font-weight: bold; color:black;padding-left: 45px;">Action</th>
                 </thead>
                 <tbody>    
                   <tr>
@@ -48,11 +46,9 @@
                       <td>Zones 1</td>                    
                                           
                                          
-                      <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                      
-                      <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-
-                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
+                      <td><a data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></a>
+                      <a data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></a>
+                      <a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>
     
                   <tr>
@@ -69,11 +65,9 @@
                       <td>Zones 2</td>                    
                                           
                                          
-                      <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                      
-                      <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-
-                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
+                      <td><a data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></a>
+                      <a data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></a>
+                      <a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>
     
     
@@ -91,11 +85,9 @@
                       <td>Zones 3</td>                    
                                           
                                          
-                      <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                      
-                      <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-
-                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
+                      <td><a data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></a>
+                      <a data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></a>
+                      <a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>    
     
                   <tr>
@@ -112,11 +104,9 @@
                       <td>Zones 4</td>                    
                                           
                                          
-                      <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                      
-                      <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-
-                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
+                      <td><a data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></a>
+                      <a data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></a>
+                      <a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>
     
     
@@ -133,11 +123,9 @@
                       <td>Zones 5</td>                    
                                           
                                          
-                      <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                      
-                      <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-
-                      <td><a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
+                      <td><a data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></a>
+                      <a data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></a>
+                      <a href="/demand/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>    
                 </tbody>        
           </table>

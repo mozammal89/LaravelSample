@@ -86,4 +86,9 @@ class DeliveryController extends Controller
     {
         //
     }
+
+     public function report()
+    {
+        return view('deliverychalan.report');
+    }
 }

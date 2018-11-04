@@ -6,16 +6,44 @@
             <div class="card">
                 <div class="card-header"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Report</div> 
                 <div class="card-body">
-                    <div class="row">
-                        <div style="margin-bottom: 40px" align="right" class="col-sm-4">
+                    <div class="row" style="margin-bottom: 40px">
+                        <div  align="right" class="col-sm-4">
                             <img  src="{{URL::asset('logo2.png')}}" height="50px" >
                         </div>
                         <div class="col-sm-6">
                             <img  src="{{URL::asset('logo3.png')}}" height="50px" >
                         </div>
                     </div>
-                    <h3 align="center" style="background-color: #e11d2e;color: white; font-family: -webkit-body;">DEMAND LETTER</h3>
+                    <h3 align="center" style="background-color: #e11d2e;color: white; font-family: -webkit-body;">DELIVERY CHALAN</h3>
                     <hr style="margin-bottom: 30px">
+
+                    <div style="height: 200px;margin-bottom: 30px" class="col-sm-12">
+
+                    	<div class="col-sm-8">
+                    		<h6 ><b>CORPORATE OFFICE :</b></h6>
+                    		<p style="margin-bottom: 0px">Ideal Tread Center, 102, Shaheed Tajuddin Ahmed Sarani</p>
+                    		<p style="margin-bottom: 0px">Tejgaon I/A, Dhaka-1208, Bangladesh.</p>
+                    		<p style="margin-bottom: 0px"><b>Tel :</b> 096 02 333888, Fax: 88-02-8122181</p>
+                    		<p style="margin-bottom: 0px"><b>E-mail :</b> ekcl@esquirebd.com</p>
+                    		<p style="margin-bottom: 0px"><b>FACTORY :</b> Plot B-36, BSCIC Indestrial Estate</p>
+                    		<p style="margin-bottom: 0px">Kanchpur, Sonargaon, narangonj.</p>
+                    	</div>
+                    	<div class="col-sm-4">
+                    		<p style="margin-bottom: 0px;    margin-top: 155px;"><b>No : </b> 14788</p>
+                    		<p style="margin-bottom: 0px"><b>Date : </b>October 29, 2018</p>
+                    	</div>
+                    </div>
+
+                    <div style="height: 200px;border: 1px solid black; margin-bottom: 30px" class="col-sm-12">
+
+                    	<div class="col-sm-8">
+                    		<h6><b>CORPORATE OFFICE :</b></h6>
+                    		
+                    	</div>
+                    	<div class="col-sm-4">
+                    		
+                    	</div>
+                    </div>
                     <div  class="col-sm-5 ">
                         <label style="margin-left:15px" for="defaultForm-email">Dealer/Customer Name :</label> Md. Mozammal Hossain
                     </div>
@@ -96,7 +124,7 @@
                                   <td>200 pieces</td>
                                   <td>100 tk</td>                    
                                   <td align="center" style="padding-left: 25px;">20 tk</td>                    
-                                  <td align="center" style="padding-left: 10px;">1980 tk</td>                    
+                                  <td align="center" style="padding-left: 10px;">1980 tk</td>       
                                 </tr>
                 
                                 <tr>
@@ -106,7 +134,7 @@
                                   <td>300 pieces</td>
                                   <td>100 tk</td>                    
                                   <td align="center" style="padding-left: 25px;">15 tk</td>                    
-                                  <td align="center" style="padding-left: 10px;">2985 tk</td>                    
+                                  <td align="center" style="padding-left: 10px;">2985 tk</td>
                                 </tr>    
                 
                                 <tr>
@@ -116,7 +144,7 @@
                                   <td>400 pieces</td>
                                   <td>100 tk</td>                    
                                   <td align="center" style="padding-left: 25px;">18 tk</td>                    
-                                  <td align="center" style="padding-left: 10px;">3982 tk</td>                    
+                                  <td align="center" style="padding-left: 10px;">3982 tk</td>
                                 </tr>
                 
                                 <tr>
@@ -126,8 +154,9 @@
                                   <td>500 pieces</td>
                                   <td>100 tk</td>                    
                                   <td align="center" style="padding-left: 25px;">25 tk</td>                    
-                                  <td align="center" style="padding-left: 10px;">4975 tk</td>                    
+                                  <td align="center" style="padding-left: 10px;">4975 tk</td>
                                 </tr> 
+
                                 <tr>
                                     <td></td>
                                     <td></td>

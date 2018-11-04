@@ -126,7 +126,7 @@
                     <li><a href="/demand"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</a></li>                    
                     <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</a></li>                    
                     <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/products.png')}}"> Products</a></li>                    
-                    <li><a href="/deliverychalan/create"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
+                    <li><a href="/deliverychalan"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
                     <li><a href="#"><img align="center" src="{{URL::asset('icon/storage.png')}}"> Inventory</a></li>                    
                     
                     <li><a href="#"><img align="center" src="{{URL::asset('icon/profile.png')}}"> Profile</a></li>

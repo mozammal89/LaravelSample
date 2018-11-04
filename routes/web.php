@@ -24,7 +24,11 @@ Route::get('demand','DemandController@index')->name('demand.index');
 Route::get('demand/create','DemandController@create')->name('demand.create');
 Route::get('demand/report','DemandController@report')->name('demand.report');
 
-Route::resource('deliverychalan','DeliveryController');
+// deliverychalan routes
+Route::get('deliverychalan','DeliveryController@index')->name('deliverychalan.index');
+Route::get('deliverychalan/create','DeliveryController@create')->name('deliverychalan.create');
+Route::get('deliverychalan/report','DeliveryController@report')->name('deliverychalan.report');
+
 Route::resource('dealer','DealerController');
 Route::resource('report','ReportController');
 
