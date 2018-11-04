@@ -5,15 +5,6 @@
         <div class="col-md-11">
             <div class="card">
                 <div class="card-header"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</div>
-                <div class="row">
-                    <div class=col-md-10>
-                    <h4>Add New Dealer</h4>                   
-                </div>
-                <div class=col-md-2>
-                    <a href="/demand" align="right" class=" btn btn-warning">demand List </a>
-                </div>
-                </div>
-                                
                 <div class="card-body">
                     <div id="inputh" class="md-form col-sm-6 hp">                   
                         <input type="text" id="defaultForm-email" class="form-control">
@@ -24,11 +15,7 @@
                         <label style="margin-left:15px" for="defaultForm-pass">Dealer Code</label>
                     </div>
                     <div id="inputh" class="md-form col-sm-3 hp">                   
-                        <!-- <input type="date" id="defaultForm-pass" class="form-control"> -->
-                    
-                        <input type="text" type="text" id="sandbox-container" class="form-control"  placeholder="Select Date" />
-                        <!-- <label style="margin-left:15px" for="defaultForm-email">Date</label> -->
-                                     
+                        <input type="date" id="defaultForm-pass" class="form-control">                   
                     </div>
                     <div  id="inputh" class="md-form col-sm-5 hp">                   
                         <input type="text" id="defaultForm-email" class="form-control">
@@ -91,8 +78,8 @@
                         <input type="text" id="defaultForm-email" class="form-control">
                         <label style="margin-left:15px" for="defaultForm-email">TT Check No</label>
                     </div>
-                    <div id="inputh" class="md-form col-sm-3 hp">               
-                        <input type="text" type="text" id="bankdate" class="form-control"  placeholder="Select Date" />                                     
+                    <div id="inputh" class="md-form col-sm-3 hp">                   
+                        <input type="date" id="defaultForm-pass" class="form-control">
                     </div>
                     <div id="inputh" class="md-form col-sm-3 hp">                   
                         <input type="text" id="defaultForm-pass" class="form-control">
@@ -109,13 +96,13 @@
 
                     <div class="row ">
                         
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             <p align="left" style="font-weight: bold; font-size: 16px;margin-bottom: 0px;padding-bottom: 0px;">Product Code</p>
                         </div>
                         <div class="col-sm-2">      
                             <p align="left" style="font-weight: bold; font-size: 16px; margin-bottom: 0px;padding-bottom: 0px;">Product Name</p>   
                         </div>
-                        <div class="col-sm-1"> 
+                        <div class="col-sm-2"> 
                             <p align="left" style="font-weight: bold; font-size: 16px; margin-bottom: 0px;padding-bottom: 0px;">Color</p>
                         </div>
                         <div class="col-sm-1"> 
@@ -136,21 +123,15 @@
                     <div id="goods_container">	
                         <div class=" container1">  
                              
-                            <div id="inputh" class="md-form col-sm-3 ">                   
-                               <!--  <input type="text" id="defaultForm-pass" class="form-control">
-                                <label style="margin-left:15px" for="defaultForm-email">Product Code</label>  -->     
-                                <select class="custom-select" id="inlineFormCustomSelect">
-                                    <option selected>Select Product Code</option>
-                                    <option value="1">Prodect4654</option>
-                                    <option value="2">Product1515</option>
-                                    <option value="3">Product1464</option>
-                              </select>            
+                            <div id="inputh" class="md-form col-sm-2 ">                   
+                                <input type="text" id="defaultForm-pass" class="form-control">
+                                <label style="margin-left:15px" for="defaultForm-email">Product Code</label>                  
                             </div>
                             <div id="inputh" class="md-form col-sm-2 ">                   
                                 <input type="text" id="defaultForm-pass" class="form-control">
                                 <label style="margin-left:15px" for="defaultForm-email">Product Name</label>                  
                             </div>
-                            <div id="inputh" class="md-form col-sm-1 ">                   
+                            <div id="inputh" class="md-form col-sm-2 ">                   
                                 <input type="text" id="defaultForm-pass" class="form-control">
                                 <label style="margin-left:15px" for="defaultForm-email">Color</label>                  
                             </div>
@@ -178,8 +159,8 @@
         </div>
     </div>
 </div>
-@endsection
-@section('script')
+
+
 <script type="text/javascript">
 	$(document).ready(function() {
 		// add dynamic infut field
@@ -191,7 +172,7 @@
         e.preventDefault();
         if(x < max_fields){
             x++;          
-            $(wrapper).append('<div class=" container1">                                                                                                                 <div id="inputh" class="md-form col-sm-3 ">                                                   <select class="custom-select" id="inlineFormCustomSelect">                                    <option selected>Select Product Code</option>                                    <option value="1">Prodect4654</option>                                    <option value="2">Product1515</option>                                    <option value="3">Product1464</option>                              </select>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Product Name</label>                                              </div>                            <div id="inputh" class="md-form col-sm-1 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Color</label>                                              </div>                            <div id="inputh" class="md-form col-sm-1 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                               <label style="margin-left:15px" for="defaultForm-email">Order</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">U.Price</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Total Amount</label>                                              </div>                                         <div class="col-sm-1 delete"><a href="#" style="height:30px;width: 45px;margin-left: 15px;" class="btn btn-danger "><i class="glyphicon glyphicon-remove"></i></a>  </div> </div>'); 
+            $(wrapper).append('<div class=" container1">                                                                                                                 <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Product Code</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Product Name</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Color</label>                                              </div>                            <div id="inputh" class="md-form col-sm-1 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                               <label style="margin-left:15px" for="defaultForm-email">Order</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">U.Price</label>                                              </div>                            <div id="inputh" class="md-form col-sm-2 ">                                                   <input type="text" id="defaultForm-pass" class="form-control">                                <label style="margin-left:15px" for="defaultForm-email">Total Amount</label>                                              </div>                                         <div class="col-sm-1 delete"><a href="#" style="height:30px;width: 45px;margin-left: 15px;" class="btn btn-danger "><i class="glyphicon glyphicon-remove"></i></a>  </div> </div>'); 
             //add input box
         }
   else
@@ -206,63 +187,7 @@
     $(wrapper).on("click",".delete", function(e){
         e.preventDefault(); $(this).parent('div').remove(); x--;
         total();
-    })    
-
-//demand Name
-$('#sandbox-container').datepicker({
-    autoclose: true
-});
-
-$('#sandbox-container').on('show', function(e){
-    console.debug('show', e.date, $(this).data('stickyDate'));
-    
-    if ( e.date ) {
-         $(this).data('stickyDate', e.date);
-    }
-    else {
-         $(this).data('stickyDate', null);
-    }
-});
-
-$('#sandbox-container').on('hide', function(e){
-    console.debug('hide', e.date, $(this).data('stickyDate'));
-    var stickyDate = $(this).data('stickyDate');
-    if ( !e.date && stickyDate ) {
-        console.debug('restore stickyDate', stickyDate);
-        $(this).datepicker('setDate', stickyDate);
-        $(this).data('stickyDate', null);
-    }
-});
-
-
-// bankdate
-$('#bankdate').datepicker({
-    autoclose: true
-});
-
-$('#bankdate').on('show', function(e){
-    console.debug('show', e.date, $(this).data('stickyDate'));
-    
-    if ( e.date ) {
-         $(this).data('stickyDate', e.date);
-    }
-    else {
-         $(this).data('stickyDate', null);
-    }
-});
-
-$('#bankdate').on('hide', function(e){
-    console.debug('hide', e.date, $(this).data('stickyDate'));
-    var stickyDate = $(this).data('stickyDate');
-    if ( !e.date && stickyDate ) {
-        console.debug('restore stickyDate', stickyDate);
-        $(this).datepicker('setDate', stickyDate);
-        $(this).data('stickyDate', null);
-    }
-});
-
-
-
+    })       
 }); //end document function
     
 </script>

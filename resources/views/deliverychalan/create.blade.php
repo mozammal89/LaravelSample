@@ -38,7 +38,7 @@
                                 <hr>
                             <div id="inputh" class="md-form hp col-sm-12">                   
                                 <input type="text" id="defaultForm-pass" class="form-control">
-                                <label style="margin-left:15px" for="defaultForm-pass">Truck No </label>
+                                <label style="margin-left:15px" for="defaultForm-pass">Reuck No </label>
                             </div>
                             <div id="inputh" class="md-form hp col-sm-12">                   
                                 <input type="text" id="defaultForm-pass" class="form-control">

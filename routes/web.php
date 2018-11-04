@@ -17,6 +17,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+<<<<<<< HEAD
 //Route::resource('demand','DemandController');
 
 // demand routes
@@ -29,6 +30,10 @@ Route::get('deliverychalan','DeliveryController@index')->name('deliverychalan.in
 Route::get('deliverychalan/create','DeliveryController@create')->name('deliverychalan.create');
 Route::get('deliverychalan/report','DeliveryController@report')->name('deliverychalan.report');
 
+=======
+Route::resource('demand','DemandController');
+Route::resource('deliverychalan','DeliveryController');
+>>>>>>> 63d3008abc19cdc9aa7e4ff592bdacf9357dc29b
 Route::resource('dealer','DealerController');
 Route::resource('report','ReportController');
 

@@ -10,7 +10,7 @@
                 <div class="content-box-large">
                   <div class="card-body">       
                   <div class=col-md-10>
-                    <h4>All Dealer Details</h4>                   
+                    <h4>All Dealer Details</h4>
                   </div>
                   <div class=col-md-2>
                       <a href="/dealer/create" style="width: 35px" class=" btn btn-success btn-sm glyphicon glyphicon-plus"> </a>
@@ -195,10 +195,6 @@
 </div>
 </div>
 </div>
-
-@endsection
-@section('script')
-  
 <script type="text/javascript">
     $(document).ready(function(){
 $("#mytable #checkall").click(function () {
@@ -206,6 +202,7 @@ $("#mytable #checkall").click(function () {
             $("#mytable input[type=checkbox]").each(function () {
                 $(this).prop("checked", true);
             });
+
         } else {
             $("#mytable input[type=checkbox]").each(function () {
                 $(this).prop("checked", false);
@@ -214,7 +211,7 @@ $("#mytable #checkall").click(function () {
     });
     
     $("[data-toggle=tooltip]").tooltip();
-
 });
+
 </script>
 @endsection
