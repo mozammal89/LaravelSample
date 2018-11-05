@@ -10,7 +10,28 @@
                 <div class="content-box-large">
                   <div class="card-body">       
                   
-        <div class="col-md-12">        
+        <div class="col-md-12">
+        <div style="margin-top: 10px;" id="inputh" class="md-form col-sm-3 hp">
+                <select class="form-control" id="inlineFormCustomSelect">
+                  <option selected>Select Dealer</option>
+                  <option value="1">KMC Trading 1</option>
+                  <option value="1">KMC Trading 2</option>
+                  <option value="2">KMC Trading 3</option>
+                  <option value="3">KMC Trading 4</option>
+                  <option value="3">KMC Trading 5</option>
+                  <option value="3">KMC Trading 6</option>
+                  <option value="3">KMC Trading 7</option>
+                </select>
+        </div>
+        <div id="inputh" class="md-form col-sm-3 hp">
+          <input type="date" id="defaultForm-pass" class="form-control">
+        </div> 
+        <div id="inputh" class="md-form col-sm-3 hp">
+          <input type="date" id="defaultForm-pass" class="form-control">
+        </div>
+        <div align="pull-right" id="inputh" class="md-form col-sm-3 hp">
+          <button class="btn btn-success ">Search</button>
+        </div>       
         <div class="table-responsive">                
             <table id="mytable" class="table table-bordred table-striped">                   
                 <thead>                   
@@ -30,7 +51,7 @@
                 <tbody>    
                   <tr>                     
                       <td>30-Jun-18</td>
-                      <td>15768</td>
+                      <td>15769</td>
                       <td>EPL/Dlr/2018/06-5650</td>
                       <td>28-Jun-18</td>
                       <td>KMC Trading</td>                    
@@ -38,63 +59,40 @@
                       <td>4909</td>                   
                       <td>13296 tk</td>                   
                       <td style="background-color: green;color: #fff">Delivered</td>                   
-                      <td><a class="btn btn-warning " href="product/delivery/report">Print</a></td>
+                      <td>
+                        <a href="product/delivery/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a>
+                      </td>
                      
                   </tr>
     
                   <tr>
-                      <td> Name 2</td>
-                      <td>Description 2</td>
-                      <td>65</td>
-                      <td>12</td>
-                      <td>October 29, 2018</td>                    
-                      <td>516515</td>                   
-                      <td>516515</td>                   
-                      <td>516515</td>                   
-                      <td>516515</td>                    
-                       <td><a class="btn btn-warning " href="report/create">Print</a></td> 
+                      <td>30-Jun-18</td>
+                      <td>15770</td>
+                      <td>EPL/Dlr/2018/06-5651</td>
+                      <td>29-Jun-18</td>
+                      <td>KMC Trading</td>                    
+                      <td>1004</td>                   
+                      <td>4910</td>                   
+                      <td>58878 tk</td>                   
+                      <td style="background-color: red;color: #fff">Pending</td>                   
+                      <td><a href="product/delivery/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>
     
     
                   <tr>
-                      <td > Name 3</td>
-                      <td >Description 3</td>
-                      <td >65</td>
-                      <td>12</td>
-                      <td>October 29, 2018</td>                    
-                      <td>516515</td>                   
-                      <td>516515</td>                   
-                      <td>516515</td>                   
-                      <td>516515</td>                    
-                       <td><a class="btn btn-warning " href="report/create">Print</a></td>
+                      <td>30-Jun-18</td>
+                      <td>15771</td>
+                      <td>EPL/Dlr/2018/06-5652</td>
+                      <td>30-Jun-18</td>
+                      <td>KMC Trading</td>                    
+                      <td>1005</td>                   
+                      <td>4911</td>                   
+                      <td>89243 tk</td>                   
+                      <td style="background-color: green;color: #fff">Delivered</td>                   
+                      <td><a href="product/delivery/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>    
     
-                  <tr>
-                      <td> Name 4</td>
-                      <td>Description 4</td>
-                      <td>65</td>
-                      <td>12</td>
-                      <td>October 29, 2018</td>                    
-                      <td>516515</td>                   
-                      <td>516515</td>                   
-                      <td>516515</td>                   
-                      <td>516515</td>                    
-                       <td><a class="btn btn-warning " href="report/create">Print</a></td>
-                  </tr>
-    
-    
-                  <tr>
-                      <td > Name 5</td>
-                      <td >Description 5</td>
-                      <td >65</td>
-                      <td>12</td>
-                      <td>October 29, 2018</td>                    
-                      <td>516515</td>                   
-                      <td>516515</td>                   
-                      <td>516515</td>                   
-                      <td>516515</td>                    
-                       <td><a class="btn btn-warning " href="report/create">Print</a></td>
-                  </tr>    
+                      
                 </tbody>        
           </table>
 
