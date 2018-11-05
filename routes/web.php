@@ -33,6 +33,7 @@ Route::get('deliverychalan/report','DeliveryController@report')->name('deliveryc
 //Product
 Route::get('product','ProductController@index')->name('product.index');
 Route::get('product/create','ProductController@create')->name('product.create');
+Route::get('product/delivery/report','ProductController@pdreport')->name('product.delivery.report');
 
 Route::resource('dealer','DealerController');
 Route::resource('report','ReportController');

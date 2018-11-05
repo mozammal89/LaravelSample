@@ -14,86 +14,86 @@
         <div class="table-responsive">                
             <table id="mytable" class="table table-bordred table-striped">                   
                 <thead>                   
-                  <th><input type="checkbox" id="checkall" /></th>                  
-                  <th style="font-weight: bold;color:black">Product Name</th>
-                  <th style="font-weight: bold;color:black">Product Description</th>
-                  <th style="font-weight: bold;color:black">Quantity</th>                     
-                  <th style="font-weight: bold;color:black">Unit Price</th>                     
-                  <th style="font-weight: bold;color:black">Date</th>                     
-                  <th style="font-weight: bold;color:black">Total Price</th>                     
-                  <th style="font-weight: bold;color:black">Print</th>
+                                
+                  <th style="font-weight: bold;color:black">D.O.Delivery</th>
+                  <th style="font-weight: bold;color:black">Challan No</th>                     
+                  <th style="font-weight: bold;color:black">Bill No</th>                     
+                  <th style="font-weight: bold;color:black">DO Date</th>                     
+                  <th style="font-weight: bold;color:black">N.O.Dealer</th>                     
+                  <th style="font-weight: bold;color:black">Dealer Code</th>
+                  <th style="font-weight: bold;color:black">DO No</th>
+                  <th style="font-weight: bold;color:black">Total Amount</th>
+                  <th style="font-weight: bold;color:black">Status</th>
+                  <th style="font-weight: bold;color:black">Detaila</th>
+
                 </thead>
                 <tbody>    
-                  <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>                      
-                      <td> Name 1</td>
-                      <td>Description 1</td>
-                      <td>65</td>
-                      <td>12</td>
-                      <td>October 29, 2018</td>                    
-                      <td>516515</td>                    
-                                          
-                                         
-                      <td><a class="btn btn-warning " href="report/create">Print</a></td>
+                  <tr>                     
+                      <td>30-Jun-18</td>
+                      <td>15768</td>
+                      <td>EPL/Dlr/2018/06-5650</td>
+                      <td>28-Jun-18</td>
+                      <td>KMC Trading</td>                    
+                      <td>1003</td>                   
+                      <td>4909</td>                   
+                      <td>13296 tk</td>                   
+                      <td style="background-color: green;color: #fff">Delivered</td>                   
+                      <td><a class="btn btn-warning " href="product/delivery/report">Print</a></td>
                      
                   </tr>
     
                   <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>
-                     
                       <td> Name 2</td>
                       <td>Description 2</td>
                       <td>65</td>
                       <td>12</td>
                       <td>October 29, 2018</td>                    
+                      <td>516515</td>                   
+                      <td>516515</td>                   
+                      <td>516515</td>                   
                       <td>516515</td>                    
-                       <td><a class="btn btn-warning " href="report/create">Print</a></td>                   
-                      
-                      
+                       <td><a class="btn btn-warning " href="report/create">Print</a></td> 
                   </tr>
     
     
                   <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>
-                      
                       <td > Name 3</td>
                       <td >Description 3</td>
                       <td >65</td>
                       <td>12</td>
                       <td>October 29, 2018</td>                    
+                      <td>516515</td>                   
+                      <td>516515</td>                   
+                      <td>516515</td>                   
                       <td>516515</td>                    
-                       <td><a class="btn btn-warning " href="report/create">Print</a></td>                   
-                      
-                      
+                       <td><a class="btn btn-warning " href="report/create">Print</a></td>
                   </tr>    
     
                   <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>
-                     
                       <td> Name 4</td>
                       <td>Description 4</td>
                       <td>65</td>
                       <td>12</td>
                       <td>October 29, 2018</td>                    
+                      <td>516515</td>                   
+                      <td>516515</td>                   
+                      <td>516515</td>                   
                       <td>516515</td>                    
-                       <td><a class="btn btn-warning " href="report/create">Print</a></td>                   
-                     
-                      
+                       <td><a class="btn btn-warning " href="report/create">Print</a></td>
                   </tr>
     
     
                   <tr>
-                      <td><input type="checkbox" class="checkthis" /></td>
-                      
                       <td > Name 5</td>
                       <td >Description 5</td>
                       <td >65</td>
                       <td>12</td>
                       <td>October 29, 2018</td>                    
+                      <td>516515</td>                   
+                      <td>516515</td>                   
+                      <td>516515</td>                   
                       <td>516515</td>                    
-                       <td><a class="btn btn-warning " href="report/create">Print</a></td>                   
-                       
-                      
+                       <td><a class="btn btn-warning " href="report/create">Print</a></td>
                   </tr>    
                 </tbody>        
           </table>
