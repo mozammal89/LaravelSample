@@ -10,33 +10,52 @@
                      
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
-          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
+          <div class="card col-md-4">
+              <div class="card-header"> Daily Collection Progress Report</div>
+                <div class="card-body">
+                    <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+                      <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--12-col-desktop">
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">2000<tspan font-size="0.1" dy="-0.07"><br>Pieces</tspan></text>
+                      </svg>
+                    </div>
+                </div>
           </div>
-          <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
-            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
-              <use xlink:href="#chart" />
-            </svg>
-            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
-              <use xlink:href="#chart" />
-            </svg>
+          <div class="card col-md-8">
+            <div class="card-header">Monthly Collection Progress Report</div>
+              <div class="card-body">
+                 <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col">
+                    <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
+                      <use xlink:href="#chart" />
+                      <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">2000<tspan font-size="0.1" dy="-0.07"><br>Pieces</tspan></text>
+                    </svg>
+                 </div>
+            </div>
           </div>
-          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+          <div class="card col-md-4">
+              <div class="card-header"> Daily Due Progress Report</div>
+                <div class="card-body">
+                    <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+                      <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--12-col-desktop">
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">2000<tspan font-size="0.1" dy="-0.07"><br>Pieces</tspan></text>
+                      </svg>
+                    </div>
+                </div>
+          </div>
+          <div class="card col-md-8">
+            <div class="card-header">Monthly Due Progress Report</div>
+              <div class="card-body">
+                 <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col">
+                    <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
+                      <use xlink:href="#chart" />
+                      <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">2000<tspan font-size="0.1" dy="-0.07"><br>Pieces</tspan></text>
+                    </svg>
+                 </div>
+            </div>
+          </div>
+          
+          <div class="demo-cards mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
             <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
               <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
                 <h2 class="mdl-card__title-text">Updates</h2>
