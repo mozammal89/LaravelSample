@@ -17,7 +17,7 @@ class DemandController extends Controller
     // }
     public function index()
     {
-        //
+        return view('demand.index');
     }
 
     /**
@@ -84,5 +84,10 @@ class DemandController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function report()
+    {
+        return view('demand.report');
+        
     }
 }

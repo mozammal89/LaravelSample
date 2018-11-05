@@ -5,6 +5,14 @@
         <div class="col-md-11">
             <div class="card">
                 <div class="card-header"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</div>
+                <div class="row">
+                    <div class=col-md-10>
+                    <h4>Add New Dealer</h4>                   
+                </div>
+                <div class=col-md-2>
+                    <a href="/demand" align="right" class=" btn btn-warning">demand List </a>
+                </div>
+                </div>
                 <div class="card-body">
                     <div id="inputh" class="md-form col-sm-6 hp">                   
                         <input type="text" id="defaultForm-email" class="form-control">
