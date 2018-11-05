@@ -133,7 +133,7 @@
                       <a href="/dealer"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</a>
                     </li>                    
                     <li>
-                      <a href="/dealer"><img align="center" src="{{URL::asset('icon/products.png')}}"> Products</a>
+                      <a href="/product"><img align="center" src="{{URL::asset('icon/products.png')}}"> Products</a>
                     </li>   
                     <li>
                       <a href="/deliverychalan"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
