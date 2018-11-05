@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-11">
             <div class="card">
-                <div class="card-header"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Report</div> 
+                <div class="card-header"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Chalan Report</div> 
                 <div class="card-body">
                     <div class="row" style="margin-bottom: 40px">
                         <div  align="right" class="col-sm-4">
@@ -36,125 +36,86 @@
 
                     <div style="height: 200px;border: 1px solid black; margin-bottom: 30px" class="col-sm-12">
 
-                    	<div class="col-sm-8">
-                    		<h6><b>CORPORATE OFFICE :</b></h6>
-                    		
+                    	<div class="col-sm-5">
+                    		<h6 style="margin-bottom: 0px"><b>CONSIGNEE :</b></h6>
+                        <p style="margin-bottom: 0px">M/S Chowdhury Traders</p>
+                        <p style="margin-bottom: 0px"> Jogot Bazar, Brahmanbaria-3400, Bangladesh </p>
                     	</div>
-                    	<div class="col-sm-4">
-                    		
+                      <div align="right" class="col-sm-1">
+                        <div  class="line" style="height: 199px;width: 2px;background-color: black;">
+                        </div>
+                      </div>
+                    	<div class="col-sm-5">
+                        <h6 style="margin-bottom: 0px;"><b>CONSIGNOR :</b></h6>
+                        <h6 style="margin-bottom: 0px;margin-top: 0px;font-family: none;"><b>ESQUIRE PLASTICS LTD </b></h6>
+                    		<h6 style="margin-bottom: 0px;margin-top: 0px;">Jamaldi, Gazaria, Munshigonj.</h6>
+                        <b><hr></b>
+                        <p style="margin-bottom: 0px"><b>Truck No : </b>113815</p>
+                        <p style="margin-bottom: 0px"><b>Product  : </b>House Hold</p>
                     	</div>
                     </div>
-                    <div  class="col-sm-5 ">
-                        <label style="margin-left:15px" for="defaultForm-email">Dealer/Customer Name :</label> Md. Mozammal Hossain
+                    <div  class="col-sm-12" style="margin-bottom: 30px;">
+                        <label style="margin-left:15px" for="defaultForm-email">Purchase Order # </label> Md. PO No: 14283-84. Bill No:4958 (id)
                     </div>
-                    <div  class="col-sm-4 "> 
-                        <label style="margin-left:15px" for="defaultForm-pass">Dealer Code :</label> Moz123456
+                    <div  class="col-sm-12">
+                        <label style="margin-left:5px" for="defaultForm-email"><u>Shipping Details : </label>
                     </div>
-                    <div  class="col-sm-3 ">
-                        <label style="margin-left:15px" for="defaultForm-email">Date :</label> 01/11/1/2018
-                                     
-                    </div>
-                    <div   class="col-sm-5 ">
-                        <label style="margin-left:15px" for="defaultForm-email">Address :</label> Uttara, Dhaka, Bangladesh
-                    </div> 
-                    <div  class="col-sm-4 ">
-                        <label style="margin-left:15px" for="defaultForm-pass">Mobile :</label> 01934115336
-                    </div>
-                    <div  class="col-sm-3 "> 
-                        <label style="margin-left:15px" for="defaultForm-email">Sales Officer :</label> abc xyz                  
-                    </div>
-                    <div  class="col-sm-5 ">
-                        <label style="margin-left:15px" for="defaultForm-email">District :</label> Dhaka
-                    </div>
-                    <div  class="col-sm-4 ">
-                        <label style="margin-left:15px" for="defaultForm-pass">Sales Area :</label> Uttara
-                    </div>
-                    <div  class="col-sm-3 ">
-                        <label style="margin-left:15px" for="defaultForm-email">Sales Zones :</label> Sector-14                   
-                    </div>
-                    <div  class="col-sm-12 ">
-                        <label style="margin-left:15px" for="defaultForm-email">ID No :</label> 0123456789                  
-                    </div>  
-                    <div  class="col-sm-9 ">
-                        <label style="margin-left:15px" for="defaultForm-email">Bank name/Address :</label> Uttara Bank, Dhaka, Bangladesh 
-                    </div>
-                    <div  class="col-sm-3 "> 
-                        <label style="margin-left:15px" for="defaultForm-email">Date :</label> 01/11/2018
-                    </div>
-                    <div  class="col-sm-5 ">
-                        <label style="margin-left:15px" for="defaultForm-email">TT Check No :</label> abc123
-                    </div>
-                    <div  class="col-sm-4 ">
-                        <label style="margin-left:15px" for="defaultForm-email">Fayment Type :</label> Cash
-                    </div>
-                    
-                    <div  class="col-sm-3 ">
-                        <label style="margin-left:15px" for="defaultForm-email">Amount :</label> 536580 tk
-                    </div>
-                    <div  class="col-sm-6 ">
-                        <label style="margin-left:15px" for="defaultForm-email">Running Cradit Balance :</label> 567897200 tk                  
-                    </div>
-                <div style="margin-top: 35px" class="col-md-12">        
+
+                <div style="margin-top: 5px" class="col-md-12">        
                     <div class="table-responsive">                
                         <table id="mytable" class="table table-bordred table-striped">                   
                             <thead>                                    
                               <th style="font-weight: bold;color:black">S.No</th>
-                              <th style="font-weight: bold;color:black">Product Code</th>
-                              <th style="font-weight: bold;color:black">Color</th>                     
-                              <th style="font-weight: bold;color:black">Demand Amount</th>
-                              <th style="font-weight: bold;color:black">Unit Price</th>
-                              <th style="font-weight: bold;color:black;padding-left: 95px;">Discount</th>
-                              <th style="font-weight: bold;color:black;padding-left: 100px">Cost Amount</th>
+                              <th style="font-weight: bold;color:black">Description</th>
+                              <th style="font-weight: bold;color:black">Product Code</th>                     
+                              <th style="font-weight: bold;color:black">Box QTY</th>
+                              <th style="font-weight: bold;color:black">QTY/BOX</th>
+                              <th style="font-weight: bold;color:black;padding-left: 100px">Quantity</th>
                             </thead>
                             <tbody>    
                                 <tr>                    
                                   <td>1</td>
+                                  <td>Descripotion 1</td>
                                   <td>Product Code 1</td>
-                                  <td>Red</td>
+                                  <td>23</td>
                                   <td>100 pieces</td>
-                                  <td>100 tk</td>                    
-                                  <td align="center" style="padding-left: 25px;">25 tk</td>                    
-                                  <td align="center" style="padding-left: 10px;">975 tk</td>                    
+                                  <td  style="padding-left: 100px;">100 </td>                    
                                 </tr>
                 
                                 <tr>
                                   <td>2</td>
+                                  <td>Descripotion 2</td>
                                   <td>Product Code 2</td>
-                                  <td>Blue</td>
+                                  <td>54</td>
                                   <td>200 pieces</td>
-                                  <td>100 tk</td>                    
-                                  <td align="center" style="padding-left: 25px;">20 tk</td>                    
-                                  <td align="center" style="padding-left: 10px;">1980 tk</td>       
+                                  <td  style="padding-left: 100px;">100 </td>                          
                                 </tr>
                 
                                 <tr>
                                   <td >3</td>
+                                  <td >Descripotion 3</td>
                                   <td >Product Code 3</td>
-                                  <td >Yellow</td>
+                                  <td >69</td>
                                   <td>300 pieces</td>
-                                  <td>100 tk</td>                    
-                                  <td align="center" style="padding-left: 25px;">15 tk</td>                    
-                                  <td align="center" style="padding-left: 10px;">2985 tk</td>
+                                  <td  style="padding-left: 100px;">100 </td>                    
                                 </tr>    
                 
                                 <tr>
                                   <td>4</td>
+                                  <td>Descripotion 4</td>
                                   <td>Product Code 4</td>
-                                  <td>Green</td>
+                                  <td>14</td>
                                   <td>400 pieces</td>
-                                  <td>100 tk</td>                    
-                                  <td align="center" style="padding-left: 25px;">18 tk</td>                    
-                                  <td align="center" style="padding-left: 10px;">3982 tk</td>
+                                  <td  style="padding-left: 100px;">100 </td>                    
                                 </tr>
                 
                                 <tr>
                                   <td >5</td>
+                                  <td >Descripotion 5</td>
                                   <td >Product Code 5</td>
-                                  <td >Black</td>
+                                  <td >22</td>
                                   <td>500 pieces</td>
-                                  <td>100 tk</td>                    
-                                  <td align="center" style="padding-left: 25px;">25 tk</td>                    
-                                  <td align="center" style="padding-left: 10px;">4975 tk</td>
+                                  <td  style="padding-left: 100px;">100 </td>                    
                                 </tr> 
 
                                 <tr>
@@ -163,13 +124,21 @@
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td style="font-weight: bold">Total Discount = 103 tk</td>
-                                    <td style="font-weight: bold">Total Amount = 14897 tk</td>
+                                    <td style="font-weight: bold">Total Quantity = 500 </td>
                                 </tr>   
                             </tbody>        
                       </table>               
+                      </div>
+                      <div class="col-sm-4">
+                              <b>Gate Pass No: </b>154642 
+                      </div>
+                      <div align="center" class="col-sm-4">
+                              <b>Delivery By: </b>Abc 
+                      </div>
+                      <div align="right" class="col-sm-4">
+                             For :<b>ESQUIRE PLASTICS LTD</b> 
                       </div> 
-                      <p style="margin-top: 50px"><b>Note : </b>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>  
+                      
                       <div align="center" style="margin-top: 50px;margin-bottom: 50px" class="col-sm-12">
                           <div class="col-sm-4">
                               <div class="sin" style="height: 2px;background-color:black;width: 160px;margin-bottom: 5px;"></div>

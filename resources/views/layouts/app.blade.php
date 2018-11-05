@@ -123,26 +123,27 @@
             <div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current"><a href="/home"><img align="center" src="{{URL::asset('icon/home.png')}}" > Dashboard</a></li>
-                    <li><a href="/demand"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</a></li>                    
-                    <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</a></li>                    
-                    <li><a href="/dealer"><img align="center" src="{{URL::asset('icon/products.png')}}"> Products</a></li>   
-                    <li><a href="/deliverychalan"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
-                    <li><a href="#"><img align="center" src="{{URL::asset('icon/storage.png')}}"> Inventory</a></li>                    
+                    <li class="current">
+                      <a href="/home"><img align="center" src="{{URL::asset('icon/home.png')}}" > Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="/demand"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</a>
+                    </li>                    
+                    <li>
+                      <a href="/dealer"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</a>
+                    </li>                    
+                    <li>
+                      <a href="/dealer"><img align="center" src="{{URL::asset('icon/products.png')}}"> Products</a>
+                    </li>   
+                    <li>
+                      <a href="/deliverychalan"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
+                    <li>
+                      <a href="#"><img align="center" src="{{URL::asset('icon/storage.png')}}"> Inventory</a>
+                    </li>                                
                     
-                    <li><a href="/deliverychalan/create"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
-                    <!-- <li class="submenu">
-                         <a href="#">
-                            <img align="center" src="{{URL::asset('icon/admin.png')}}"> H.R Admin
-                            <span class="caret pull-right"></span>
-                         </a>
-                        
-                         <ul>
-                            <li><a href="/employee">Employee</a></li>
-                            <li><a href="/salary">Salary</a></li>
-                        </ul>
-                    </li> -->
-                    <li><a href="#"><img align="center" src="{{URL::asset('icon/profile.png')}}"> Profile</a></li>
+                    <li>
+                      <a href="#"><img align="center" src="{{URL::asset('icon/profile.png')}}"> Profile</a>
+                    </li>
                     <li class="submenu">
                          <a href="#">
                             <img align="center" src="{{URL::asset('icon/report.png')}}"> Report
@@ -172,9 +173,7 @@
              </div>
           </div>
           <div class="col-md-10">
-            
                 @yield('content')
-            
           </div>
         </div>
     </div>
