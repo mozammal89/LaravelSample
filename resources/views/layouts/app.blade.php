@@ -138,7 +138,7 @@
                     <li>
                       <a href="/deliverychalan"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
                     <li>
-                      <a href="#"><img align="center" src="{{URL::asset('icon/storage.png')}}"> Inventory</a>
+                      <a href="/inventory"><img align="center" src="{{URL::asset('icon/storage.png')}}"> Inventory</a>
                     </li>                                
                     
                     <li>

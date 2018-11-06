@@ -35,6 +35,11 @@ Route::get('product','ProductController@index')->name('product.index');
 Route::get('product/create','ProductController@create')->name('product.create');
 Route::get('product/delivery/report','ProductController@pdreport')->name('product.delivery.report');
 
+
+//Inventory
+Route::get('inventory','InventoryController@index')->name('inventory.index');
+
+
 Route::resource('dealer','DealerController');
 Route::resource('report','ReportController');
 
