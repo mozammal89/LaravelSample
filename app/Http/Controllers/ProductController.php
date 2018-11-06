@@ -82,8 +82,5 @@ class ProductController extends Controller
         //
     }
 
-    public function pdreport()
-    {
-        return view('report.productdelivery.report');
-    }
+   
 }

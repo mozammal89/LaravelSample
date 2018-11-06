@@ -14,7 +14,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -23,6 +23,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/demand.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
 
     <link href="{{asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- styles -->
@@ -123,50 +124,50 @@
             <div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current">
+                    <li style="width: 175px;" class="current">
                       <a href="/home"><img align="center" src="{{URL::asset('icon/home.png')}}" > Dashboard</a>
                     </li>
-                    <li>
+                    <li style="width: 175px;">
                       <a href="/demand"><img align="center" src="{{URL::asset('icon/demand.png')}}"> Demand Letter</a>
                     </li>                    
-                    <li>
+                    <li style="width: 175px;">
                       <a href="/dealer"><img align="center" src="{{URL::asset('icon/dealer.png')}}"> Dealer</a>
                     </li>                    
-                    <li>
+                    <li style="width: 175px;">
                       <a href="/product"><img align="center" src="{{URL::asset('icon/products.png')}}"> Products</a>
                     </li>   
-                    <li>
+                    <li style="width: 175px;">
                       <a href="/deliverychalan"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Challan</a></li>                    
-                    <li>
+                    <li style="width: 175px;">
                       <a href="/inventory"><img align="center" src="{{URL::asset('icon/storage.png')}}"> Inventory</a>
                     </li>                                
                     
-                    <li>
+                    <li style="width: 175px;">
                       <a href="#"><img align="center" src="{{URL::asset('icon/profile.png')}}"> Profile</a>
                     </li>
-                    <li class="submenu">
+                    <li style="width: 175px;" class="submenu">
                          <a href="#">
                             <img align="center" src="{{URL::asset('icon/report.png')}}"> Report
                             <span class="caret pull-right"></span>
                          </a>
                          <!-- Sub menu -->
                          <ul>
-                            <li><a href="/report">Delivery Report</a></li>
-                            <li><a href="#">Bill Report</a></li>
-                            <li><a href="#">Collection Report</a></li>
-                            <li><a href="#">Sales Return Summary</a></li>
+                            <li style="width: 175px;"><a href="/deliveryreport/report"><img align="center" src="{{URL::asset('icon/delivery.png')}}"> Delivery Report</a></li>
+                            <li style="width: 175px;"><a href="/bil/report"><img align="center" src="{{URL::asset('icon/cash.png')}}"> Bill Report</a></li>
+                            <li style="width: 175px;"><a href="#">Collection Report</a></li>
+                            <li style="width: 175px;"><a href="#">Sales Return Summary</a></li>
                         </ul>
                     </li>
-                    <li class="submenu">
+                    <li style="width: 175px;" class="submenu">
                          <a href="#">
                             <img align="center" src="{{URL::asset('icon/settings.png')}}"> Settings
                             <span class="caret pull-right"></span>
                          </a>
                          <!-- Sub menu -->
                          <ul>
-                            <li><a href="#">User Role</a></li>
-                            <li><a href="#">Manage</a></li>
-                            <li><a href="#">Invoice Number</a></li>
+                            <li style="width: 175px;"><a href="#">User Role</a></li>
+                            <li style="width: 175px;"><a href="#">Manage</a></li>
+                            <li style="width: 175px;"><a href="#">Invoice Number</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -189,6 +190,7 @@
         <script src="https://code.jquery.com/jquery.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('js/custom.js')}}"></script>                                    
+        <script src="{{asset('js/custom.js')}}"></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>                                  
 </body>
 </html>

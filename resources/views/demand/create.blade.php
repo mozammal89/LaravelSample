@@ -23,7 +23,7 @@
                         <label style="margin-left:15px" for="defaultForm-pass">Dealer Code</label>
                     </div>
                     <div id="inputh" class="md-form col-sm-3 hp">                   
-                        <input type="date" id="defaultForm-pass" class="form-control">                   
+                        <input type="text" type="text" id="sandbox-container" class="form-control"  placeholder="Select Date" />                   
                     </div>
                     <div  id="inputh" class="md-form col-sm-5 hp">                   
                         <input type="text" id="defaultForm-email" class="form-control">
@@ -87,7 +87,7 @@
                         <label style="margin-left:15px" for="defaultForm-email">TT Check No</label>
                     </div>
                     <div id="inputh" class="md-form col-sm-3 hp">                   
-                        <input type="date" id="defaultForm-pass" class="form-control">
+                        <input type="text" type="text" id="bankdate" class="form-control"  placeholder="Select Date" />
                     </div>
                     <div id="inputh" class="md-form col-sm-3 hp">                   
                         <input type="text" id="defaultForm-pass" class="form-control">
@@ -195,7 +195,61 @@
     $(wrapper).on("click",".delete", function(e){
         e.preventDefault(); $(this).parent('div').remove(); x--;
         total();
-    })       
+    })  
+
+
+//DATE
+    $('#sandbox-container').datepicker({
+    autoclose: true
+});
+
+$('#sandbox-container').on('show', function(e){
+    console.debug('show', e.date, $(this).data('stickyDate'));
+    
+    if ( e.date ) {
+         $(this).data('stickyDate', e.date);
+    }
+    else {
+         $(this).data('stickyDate', null);
+    }
+});
+
+$('#sandbox-container').on('hide', function(e){
+    console.debug('hide', e.date, $(this).data('stickyDate'));
+    var stickyDate = $(this).data('stickyDate');
+    if ( !e.date && stickyDate ) {
+        console.debug('restore stickyDate', stickyDate);
+        $(this).datepicker('setDate', stickyDate);
+        $(this).data('stickyDate', null);
+    }
+});   
+
+//bank date
+    $('#bankdate').datepicker({
+    autoclose: true
+});
+
+$('#bankdate').on('show', function(e){
+    console.debug('show', e.date, $(this).data('stickyDate'));
+    
+    if ( e.date ) {
+         $(this).data('stickyDate', e.date);
+    }
+    else {
+         $(this).data('stickyDate', null);
+    }
+});
+
+$('#bankdate').on('hide', function(e){
+    console.debug('hide', e.date, $(this).data('stickyDate'));
+    var stickyDate = $(this).data('stickyDate');
+    if ( !e.date && stickyDate ) {
+        console.debug('restore stickyDate', stickyDate);
+        $(this).datepicker('setDate', stickyDate);
+        $(this).data('stickyDate', null);
+    }
+});
+  
 }); //end document function
     
 </script>

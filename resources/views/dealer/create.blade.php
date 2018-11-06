@@ -34,8 +34,8 @@
                         <label style="margin-left:15px" for="defaultForm-pass">Dealer Type</label>
                     </div>
                     <div id="inputh" class="md-form col-sm-6 hp">                   
-                        <input type="text" id="defaultForm-pass" class="form-control"> 
-                        <label style="margin-left:15px" for="defaultForm-email">Op. Date</label>                  
+                        <input type="text" id="opdate" class="form-control" placeholder="Op.Date"> 
+                        <!-- <label style="margin-left:15px" for="defaultForm-email">Op. Date</label>                   -->
                     </div>
                     <div id="inputh" class="md-form col-sm-6 hp">                   
                         <input type="text" id="defaultForm-email" class="form-control">
@@ -95,4 +95,32 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+            $('#opdate').datepicker({
+    autoclose: true
+});
+
+$('#opdate').on('show', function(e){
+    console.debug('show', e.date, $(this).data('stickyDate'));
+    
+    if ( e.date ) {
+         $(this).data('stickyDate', e.date);
+    }
+    else {
+         $(this).data('stickyDate', null);
+    }
+});
+
+$('#opdate').on('hide', function(e){
+    console.debug('hide', e.date, $(this).data('stickyDate'));
+    var stickyDate = $(this).data('stickyDate');
+    if ( !e.date && stickyDate ) {
+        console.debug('restore stickyDate', stickyDate);
+        $(this).datepicker('setDate', stickyDate);
+        $(this).data('stickyDate', null);
+    }
+});
+    });
+</script>
 @endsection

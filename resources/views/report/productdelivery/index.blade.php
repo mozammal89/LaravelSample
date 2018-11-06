@@ -24,10 +24,10 @@
                 </select>
         </div>
         <div id="inputh" class="md-form col-sm-3 hp">
-          <input type="date" id="defaultForm-pass" class="form-control">
+          <input type="text" id="fdate" class="form-control" placeholder="From Date">
         </div> 
         <div id="inputh" class="md-form col-sm-3 hp">
-          <input type="date" id="defaultForm-pass" class="form-control">
+          <input type="text" id="tdate" class="form-control" placeholder="To Date">
         </div>
         <div align="pull-right" id="inputh" class="md-form col-sm-3 hp">
           <button class="btn btn-success ">Search</button>
@@ -60,7 +60,7 @@
                       <td>13296 tk</td>                   
                       <td style="background-color: green;color: #fff">Delivered</td>                   
                       <td>
-                        <a href="product/delivery/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a>
+                        <a href="/product/delivery/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a>
                       </td>
                      
                   </tr>
@@ -75,7 +75,7 @@
                       <td>4910</td>                   
                       <td>58878 tk</td>                   
                       <td style="background-color: red;color: #fff">Pending</td>                   
-                      <td><a href="product/delivery/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
+                      <td><a href="/product/delivery/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>
     
     
@@ -89,7 +89,7 @@
                       <td>4911</td>                   
                       <td>89243 tk</td>                   
                       <td style="background-color: green;color: #fff">Delivered</td>                   
-                      <td><a href="product/delivery/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
+                      <td><a href="/product/delivery/report" data-placement="top" data-toggle="tooltip" title="Report"><button class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-print"></span></button></a></td>
                   </tr>    
     
                       
@@ -167,20 +167,59 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function(){
-$("#mytable #checkall").click(function () {
-        if ($("#mytable #checkall").is(':checked')) {
-            $("#mytable input[type=checkbox]").each(function () {
-                $(this).prop("checked", true);
-            });
+//from date
+          $('#fdate').datepicker({
+    autoclose: true
+});
 
-        } else {
-            $("#mytable input[type=checkbox]").each(function () {
-                $(this).prop("checked", false);
-            });
-        }
-    });
+$('#fdate').on('show', function(e){
+    console.debug('show', e.date, $(this).data('stickyDate'));
     
-    $("[data-toggle=tooltip]").tooltip();
+    if ( e.date ) {
+         $(this).data('stickyDate', e.date);
+    }
+    else {
+         $(this).data('stickyDate', null);
+    }
+});
+
+$('#fdate').on('hide', function(e){
+    console.debug('hide', e.date, $(this).data('stickyDate'));
+    var stickyDate = $(this).data('stickyDate');
+    if ( !e.date && stickyDate ) {
+        console.debug('restore stickyDate', stickyDate);
+        $(this).datepicker('setDate', stickyDate);
+        $(this).data('stickyDate', null);
+    }
+});
+
+//to Date
+
+$('#tdate').datepicker({
+    autoclose: true
+});
+
+$('#tdate').on('show', function(e){
+    console.debug('show', e.date, $(this).data('stickyDate'));
+    
+    if ( e.date ) {
+         $(this).data('stickyDate', e.date);
+    }
+    else {
+         $(this).data('stickyDate', null);
+    }
+});
+
+$('#tdate').on('hide', function(e){
+    console.debug('hide', e.date, $(this).data('stickyDate'));
+    var stickyDate = $(this).data('stickyDate');
+    if ( !e.date && stickyDate ) {
+        console.debug('restore stickyDate', stickyDate);
+        $(this).datepicker('setDate', stickyDate);
+        $(this).data('stickyDate', null);
+    }
+});
+
 });
 
 </script>

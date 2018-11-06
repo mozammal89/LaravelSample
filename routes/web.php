@@ -33,7 +33,6 @@ Route::get('deliverychalan/report','DeliveryController@report')->name('deliveryc
 //Product
 Route::get('product','ProductController@index')->name('product.index');
 Route::get('product/create','ProductController@create')->name('product.create');
-Route::get('product/delivery/report','ProductController@pdreport')->name('product.delivery.report');
 
 
 //Inventory
@@ -41,6 +40,16 @@ Route::get('inventory','InventoryController@index')->name('inventory.index');
 
 
 Route::resource('dealer','DealerController');
-Route::resource('report','ReportController');
+// Route::resource('report','ReportController');
+//Report
+Route::get('deliveryreport/report','ReportController@index')->name('report.index');
+Route::get('product/delivery/report','ReportController@create')->name('product.delivery.report');
+
+//Bill
+Route::get('bil/report','ReportController@billreport')->name('bill.report');
+
+
+//Profile
+Route::get('profile','ProfileController@index')->name('profile.index');
 
 

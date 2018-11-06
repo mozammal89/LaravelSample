@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ReportController extends Controller
+class ProfileController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class ReportController extends Controller
      */
     public function index()
     {
-        return view('report.productdelivery.index');
+        return view('profile.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class ReportController extends Controller
      */
     public function create()
     {
-        return view('report.productdelivery.report');
+        //
     }
 
     /**
@@ -80,10 +80,5 @@ class ReportController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function billreport()
-    {
-        return view('report.bill.report');
     }
 }

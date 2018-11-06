@@ -19,7 +19,7 @@
                     <label style="margin-top: 30px;">Delivery Chalan</label> 
                     </div>
                 <div class="col-sm-3">
-                   <input align="right" type="date" id="defaultForm-pass" class="form-control">
+                   <input align="right" type="text" id="dcdate" class="form-control" placeholder="Select date">
                 </div>
                 </div>
                 
@@ -145,7 +145,33 @@
     $(wrapper).on("click",".delete", function(e){
         e.preventDefault(); $(this).parent('div').remove(); x--;
         total();
-    })       
+    })   
+
+//date
+$('#dcdate').datepicker({
+    autoclose: true
+});
+
+$('#dcdate').on('show', function(e){
+    console.debug('show', e.date, $(this).data('stickyDate'));
+    
+    if ( e.date ) {
+         $(this).data('stickyDate', e.date);
+    }
+    else {
+         $(this).data('stickyDate', null);
+    }
+});
+
+$('#dcdate').on('hide', function(e){
+    console.debug('hide', e.date, $(this).data('stickyDate'));
+    var stickyDate = $(this).data('stickyDate');
+    if ( !e.date && stickyDate ) {
+        console.debug('restore stickyDate', stickyDate);
+        $(this).datepicker('setDate', stickyDate);
+        $(this).data('stickyDate', null);
+    }
+});    
 }); //end document function
     
 </script>
